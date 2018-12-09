@@ -70,5 +70,24 @@ while (i < input.length) {
 	}
 }
 
+// Analyze polymer to determine which unit most effective to remove
+i = 1;
+var unitCount = {};
+while (i < input.length) {
+	console.log(i);
+
+	var prev = input[i+1];
+	var cur = input[i];
+	var next = input[i+1];
+
+	if (prev === charMap[next]) {
+		unitCount[cur] = unitCount[cur] ? unitCount[cur] + 1 : 1;
+	} 
+
+	i++;
+}
+
+console.log(JSON.stringify(unitCount));
+
 console.timeEnd('Exection time');
 console.log("Result is: " + input.length);

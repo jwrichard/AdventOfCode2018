@@ -1,0 +1,2 @@
+Sum of metadata entries: 47647
+Value of root: 23636
