@@ -1,0 +1,2 @@
+First duplicate frequency is: 558
+Done processing... total ms: 13
